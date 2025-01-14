@@ -2,10 +2,10 @@
 document.getElementById("meetingForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var timing = document.getElementById("timing").value;
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let timing = document.getElementById("timing").value;
 
   // Send an email notification (using your email service, e.g., EmailJS or a backend API)
   sendEmailNotification(name, email, phone, timing);
@@ -21,7 +21,7 @@ document.getElementById("meetingForm").addEventListener("submit", function(event
 
 // Function to send an email notification
 function sendEmailNotification(name, email, phone, timing) {
-  var emailBody = `
+  let emailBody = `
     <h3>Meeting Scheduled for Telugu Course</h3>
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
@@ -37,9 +37,9 @@ function sendEmailNotification(name, email, phone, timing) {
 
 // Function to send a WhatsApp message notification
 function sendWhatsAppNotification(name, phone, timing) {
-  var message = `*Meeting scheduled for Telugu course*\n\nName: ${name}\nPhone: ${phone}\nPreferred Time: ${timing}`;
+  let message = `*Meeting scheduled for Telugu course*\n\nName: ${name}\nPhone: ${phone}\nPreferred Time: ${timing}`;
 
   // Sending WhatsApp message using the WhatsApp API link
-  var whatsappUrl = `https://wa.me/9381012709?text=${encodeURIComponent(message)}`;
-  window.open(whatsappUrl, "_blank");
+  let whatsappUrl = `https://wa.me/9381012709?text=${encodeURIComponent(message)}`;
+  globalThis.open(whatsappUrl, "_blank");
 }
