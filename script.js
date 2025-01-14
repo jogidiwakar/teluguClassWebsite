@@ -1,10 +1,4 @@
-// script.test.ts
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-
-Deno.test("Test for form submission", () => {
-  const result = "Meeting scheduled"; // Replace this with actual logic or mock test
-  assertEquals(result, "Meeting scheduled");
-});// Form Submission Script
+// Form Submission Script
 document.getElementById("meetingForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
