@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+}
+
+/* Header */
+.hero {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.french-format-text {
+  font-size: 3.5em;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  color: #FFD700; /* Gold color for a touch of elegance */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.french-subtext {
+  font-size: 1.5em;
+  font-family: 'Georgia', serif;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #e07b00;
+  transition: 0.3s ease;
+}
+
+/* Syllabus Section */
+.syllabus {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+  background-image: url('telugu-alphabets.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blur: 5px;
+}
+
+.syllabus h2 {
+  font-size: 2.5em;
+  color: #333333;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif;
+}
+
+.syllabus-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.block {
+  background-color: #ffffff;
+  padding: 30px;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.block:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+/* Meeting Section */
+.meeting {
+  background-color: #ffffff;
+  padding: 50px;
+  text-align: center;
+}
+
+.meeting form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.meeting form label {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+  display: block;
+}
+
+.meeting form input,
+.meeting form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.meeting form button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.meeting form button:hover {
+  background-color: #e07b00;
+  transition: 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
